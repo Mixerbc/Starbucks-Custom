@@ -1,0 +1,749 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+    
+    .imgbox{
+        width: 600px;
+        display: flex;
+        align-content: center;
+        transition: 0.8s;
+       
+    }
+	.sci a{ 
+		display: inline-block;
+		margin: 5px 0;
+		transform: scale(0.6);
+        filter: invert(1);
+	}
+	.sci{
+		position: absolute;
+		right: 26px;
+		display: flex;
+		
+		align-items: center;
+		flex-direction: column;
+	
+	}
+	.thumb{
+		position: absolute;
+		bottom: 15px;
+		left: 40%;
+		
+	}
+	.thumb li{	
+		display: inline-block;
+		margin: 0px 20px;
+		cursor: pointer;
+		transition: 0.4s;
+	}
+	.thumb li:hover{
+		transform: translateY(-15%);
+		
+	}
+	.thumb img{
+		max-width: 80px;
+	}
+	.imgbox img{
+		transition: 0.8s;
+	}
+	.imgbox img:hover{
+	 transform: scale(1.04);
+	}
+	
+	.content .imgbox{
+		width: 600px;
+		
+	}
+	.content a{
+		display:inline-block;
+		background-color:#017143;
+		border-radius: 40px;
+		text-decoration: none;
+		margin-top: 20px;
+		color: #ffff;
+		padding: 8px  20px;
+		font-weight: 600;
+		letter-spacing: 1px;
+        transition: 0.2s;
+	}
+    .content a:hover{
+        transform: scale(1.1);
+    }
+	.circle{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: #017143;
+		clip-path: circle(700px at right 800px);
+        transition: 0.5s;
+
+	}
+	.content span{
+		color:  #017143;
+		font-weight: 900;
+		font-size: 1.2em;
+        transition: 0.5s;
+		
+	}
+    .textbox p{
+        margin-bottom: 10px;
+        
+    }
+	.textbox h2{
+		color:#333;
+		font-size:  4em;
+	    line-height: 1.4em;
+		font-weight: 600;
+        margin-bottom: 10px;
+	}
+	.starbucks{
+		position: absolute;
+		width: 25rem;
+		height: 36rem;
+		right: 0;
+	    top: -5rem;
+        z-index: 2;
+		
+	}
+	.textbox{
+
+		position: relative;
+		max-width:700px;
+        
+	}
+
+	.content{
+		position: relative;
+		width: 100%;
+		display: flex;
+		 justify-content: space-between;
+		 align-content: center;
+	}
+	.logo{
+	
+	height: 60px;
+	position: relative;
+	max-width: 80px;
+    transition: 0.5s;
+    
+	}
+	.section{
+		position: relative;
+		widows: 100%;
+		min-height: 100vh;
+		padding: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #fff;
+	}
+	.header{
+        background-color:#fff;
+		position: fixed;
+		top: 0;
+		left:0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 100px;
+        z-index: 5;
+	}
+    
+	ul{
+		position: relative;
+		display: flex;
+	}
+	ul li{
+		list-style: none;
+	}
+	ul li a{
+		display: inline-block;
+		color:#333;
+		font-weight: 400;
+		margin-left: 40px;
+		text-decoration: none;
+        transition: 0.4s;
+	}
+    ul li a:hover{
+		
+		color:#161616;
+        font-weight: 700;
+        transition: 0.4s;
+		
+	}
+    .header a{
+        transition: 0.8s;
+
+    }
+    .bg{ background:linear-gradient( #017143, #099159, rgb(8, 217, 123))	;
+
+        transition:0.5s ;
+    }
+    .more{
+        display: inline-block;
+        transition: 0.3s   all;
+      color: #bf7550;
+      }
+     .more::before {
+    content: "";
+    
+    bottom: 108px;
+    position: absolute;
+    width: 9rem;
+    height: 3px;
+    background: rgb(43, 43, 43);
+    transform-origin: right ;
+    transform: scaleX(0);
+    transition:  transform 0.3s  ease-in-out;
+   
+  
+  }
+  
+  .more:hover::before {
+    transform-origin: left;
+    transform: scaleX(2);
+    
+  }
+       
+      
+      .colo{
+  
+        color: rgb(120, 118, 118);
+      }
+      .colii{
+          color:rgb(51, 51, 67);
+      }
+      .letra{
+          color: rgb(255, 255, 255);
+      }
+	  .letras{
+		color: rgb(162, 99, 51);
+		font-weight: 900;
+		font-size: 2rem;
+	}
+      .bgrando{
+  
+          background-color: rgb(255, 250, 245);
+      }
+      .image-overlay {
+    position: relative;
+    transition: 0.5s ease all;
+	border: none;
+  }
+  
+  .overlay {
+    z-index: 2;
+    position: absolute;
+    top: 19rem;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    background: linear-gradient( #9d5418, #bf7550,#edae8f);
+    display: flex;
+    align-items: center;
+    color: rgb(16, 16, 29); 
+    overflow: hidden;
+    transition: 0.5s ease-in-out all;
+	
+	
+  
+  }
+  .overlay2 {
+    z-index: 2;
+    position: absolute;
+    top: 19rem;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    background: linear-gradient( #9d5418, #bf7550,#edae8f);
+    display: flex;
+    align-items: center;
+    color: rgb(16, 16, 29); 
+    overflow: hidden;
+    transition: 0.5s ease-in-out all;
+	
+	
+  
+  }
+  .overlay3 {
+    z-index: 2;
+    position: absolute;
+    top: 19rem;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    background: linear-gradient( #9d5418, #bf7550,#edae8f);
+    display: flex;
+    align-items: center;
+    color: rgb(16, 16, 29); 
+    overflow: hidden;
+    transition: 0.5s ease-in-out all;
+	
+	
+  
+  }
+  .overlay4 {
+    z-index: 2;
+    position: absolute;
+    top: 19rem;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    background: linear-gradient( #9d5418, #bf7550,#edae8f);
+    display: flex;
+    align-items: center;
+    color: rgb(16, 16, 29); 
+    overflow: hidden;
+    transition: 0.5s ease-in-out all;
+	
+	
+  
+  }
+  .overlay5 {
+    z-index: 2;
+    position: absolute;
+    top: 19rem;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    background: linear-gradient( #9d5418, #bf7550,#edae8f);
+    display: flex;
+    align-items: center;
+    color: rgb(16, 16, 29); 
+    overflow: hidden;
+    transition: 0.5s ease-in-out all;
+	
+	
+  
+  }
+  .overlay6{
+    z-index: 2;
+    position: absolute;
+    top: 19rem;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    background: linear-gradient( #9d5418, #bf7550,#edae8f);
+    display: flex;
+    align-items: center;
+    color: rgb(16, 16, 29); 
+    overflow: hidden;
+    transition: 0.5s ease-in-out all;
+	
+	
+  
+  }
+  @keyframes waves{
+	0%, 100%{
+		clip-path: polygon(100% 100%, 0% 100% , 0.00% 1.75%, 2.00% 1.97%, 4.00% 2.61%, 6.00% 3.66%, 8.00% 5.07%, 10.00% 6.80%, 12.00% 8.78%, 14.00% 10.95%, 16.00% 13.23%, 18.00% 15.54%, 20.00% 17.79%, 22.00% 19.90%, 24.00% 21.81%, 26.00% 23.44%, 28.00% 24.73%, 30.00% 25.65%, 32.00% 26.15%, 34.00% 26.23%, 36.00% 25.87%, 38.00% 25.08%, 40.00% 23.91%, 42.00% 22.39%, 44.00% 20.56%, 46.00% 18.51%, 48.00% 16.30%, 50.00% 14.00%, 52.00% 11.70%, 54.00% 9.49%, 56.00% 7.44%, 58.00% 5.61%, 60.00% 4.09%, 62.00% 2.92%, 64.00% 2.13%, 66.00% 1.77%, 68.00% 1.85%, 70.00% 2.35%, 72.00% 3.27%, 74.00% 4.56%, 76.00% 6.19%, 78.00% 8.10%, 80.00% 10.21%, 82.00% 12.46%, 84.00% 14.77%, 86.00% 17.05%, 88.00% 19.22%, 90.00% 21.20%, 92.00% 22.93%, 94.00% 24.34%, 96.00% 25.39%, 98.00% 26.03%, 100.00% 26.25%);
+		
+	}
+	50%{
+		clip-path: polygon(100% 100%, 0% 100% , 0.00% 27.25%, 2.00% 27.01%, 4.00% 26.28%, 6.00% 25.11%, 8.00% 23.52%, 10.00% 21.58%, 12.00% 19.35%, 14.00% 16.92%, 16.00% 14.36%, 18.00% 11.78%, 20.00% 9.25%, 22.00% 6.88%, 24.00% 4.74%, 26.00% 2.91%, 28.00% 1.45%, 30.00% 0.42%, 32.00% -0.14%, 34.00% -0.22%, 36.00% 0.18%, 38.00% 1.06%, 40.00% 2.38%, 42.00% 4.09%, 44.00% 6.13%, 46.00% 8.44%, 48.00% 10.92%, 50.00% 13.50%, 52.00% 16.08%, 54.00% 18.56%, 56.00% 20.87%, 58.00% 22.91%, 60.00% 24.62%, 62.00% 25.94%, 64.00% 26.82%, 66.00% 27.22%, 68.00% 27.14%, 70.00% 26.58%, 72.00% 25.55%, 74.00% 24.09%, 76.00% 22.26%, 78.00% 20.12%, 80.00% 17.75%, 82.00% 15.22%, 84.00% 12.64%, 86.00% 10.08%, 88.00% 7.65%, 90.00% 5.42%, 92.00% 3.48%, 94.00% 1.89%, 96.00% 0.72%, 98.00% -0.01%, 100.00% -0.25%);
+	}
+
+
+  }
+  .image-overlay:hover .overlay{
+    top: 17rem;
+	animation: waves 3s  infinite;
+	
+    
+    
+   
+  }
+  
+ 
+   .image-overlay:hover .overlay2{
+    top: 17rem;
+	animation: waves 3s  infinite;
+	
+    
+    
+   
+  }
+  .image-overlay:hover .overlay3{
+    top: 17rem;
+	animation: waves 3s  infinite;
+	
+    
+    
+   
+  }
+  .image-overlay:hover .overlay4{
+    top: 17rem;
+	animation: waves 3s  infinite;
+	
+    
+    
+   
+  }
+  .image-overlay:hover .overlay5{
+    top: 17rem;
+	animation: waves 3s  infinite;
+	
+    
+    
+   
+  }
+  .image-overlay:hover .overlay6{
+    top: 17rem;
+	animation: waves 3s  infinite;
+	
+    
+    
+   
+  }
+ 
+  
+  .image-overlay:hover{
+    box-shadow: 2px 2px 3rem rgb(71, 36, 10) ;
+  
+  
+  
+  }
+  .proyecto{
+    visibility: hidden;
+   transition:  0.2s ease all;
+    opacity: 0.3;
+    color: rgb(114, 114, 114);
+  
+  
+  }
+  
+  .image-overlay:hover .proyecto{
+    visibility: visible;
+    transition: 0.3s;
+    opacity: 1;
+    
+  
+    
+   
+  }
+  .proyecto:hover{
+    text-decoration-line: underline;
+    
+  }
+  
+  .cafe{
+	background: linear-gradient(rgb(255, 234, 221),rgb(255, 246, 240),rgb(255, 255, 255)  ) ;
+	
+  }
+  .new{
+	width: 100vw;
+	height: 100vh;
+	z-index: 3;
+  }
+  .raios{
+	z-index: 4;
+	padding: 4rem;
+	padding-right: 33rem;
+	font-weight: 500;
+	background: linear-gradient(#015d37, #099159, rgb(7, 152, 87));
+	color: white;
+	clip-path: polygon(100% 0%, 0% 0% , 0.00% 89.99%, 1.00% 90.75%, 2.00% 91.48%, 3.00% 92.17%, 4.00% 92.82%, 5.00% 93.43%, 6.00% 94.00%, 7.00% 94.53%, 8.00% 95.02%, 9.00% 95.46%, 10.00% 95.86%, 11.00% 96.21%, 12.00% 96.51%, 13.00% 96.77%, 14.00% 96.98%, 15.00% 97.14%, 16.00% 97.26%, 17.00% 97.33%, 18.00% 97.34%, 19.00% 97.31%, 20.00% 97.23%, 21.00% 97.10%, 22.00% 96.93%, 23.00% 96.70%, 24.00% 96.43%, 25.00% 96.11%, 26.00% 95.75%, 27.00% 95.34%, 28.00% 94.88%, 29.00% 94.39%, 30.00% 93.84%, 31.00% 93.26%, 32.00% 92.64%, 33.00% 91.97%, 34.00% 91.27%, 35.00% 90.53%, 36.00% 89.76%, 37.00% 88.95%, 38.00% 88.11%, 39.00% 87.24%, 40.00% 86.34%, 41.00% 85.42%, 42.00% 84.46%, 43.00% 83.49%, 44.00% 82.49%, 45.00% 81.47%, 46.00% 80.43%, 47.00% 79.38%, 48.00% 78.32%, 49.00% 77.24%, 50.00% 76.15%, 51.00% 75.06%, 52.00% 73.96%, 53.00% 72.85%, 54.00% 71.75%, 55.00% 70.64%, 56.00% 69.54%, 57.00% 68.45%, 58.00% 67.36%, 59.00% 66.28%, 60.00% 65.21%, 61.00% 64.16%, 62.00% 63.12%, 63.00% 62.10%, 64.00% 61.10%, 65.00% 60.12%, 66.00% 59.16%, 67.00% 58.23%, 68.00% 57.33%, 69.00% 56.45%, 70.00% 55.61%, 71.00% 54.80%, 72.00% 54.02%, 73.00% 53.27%, 74.00% 52.57%, 75.00% 51.90%, 76.00% 51.27%, 77.00% 50.68%, 78.00% 50.13%, 79.00% 49.63%, 80.00% 49.17%, 81.00% 48.75%, 82.00% 48.38%, 83.00% 48.06%, 84.00% 47.78%, 85.00% 47.55%, 86.00% 47.36%, 87.00% 47.23%, 88.00% 47.14%, 89.00% 47.10%, 90.00% 47.11%, 91.00% 47.17%, 92.00% 47.28%, 93.00% 47.44%, 94.00% 47.64%, 95.00% 47.89%, 96.00% 48.19%, 97.00% 48.53%, 98.00% 48.92%, 99.00% 49.36%, 100.00% 49.84%);
+	
+
+  }
+  
+  .raios span{
+	font-weight: 900;
+	font-size: 4rem;
+	
+  }
+  .stars{
+	position: relative;
+	
+	
+  }
+  
+  .star{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 38rem;
+	z-index: 4;
+	width: 70px;
+	
+	
+  }
+.front{
+	transform: perspective(600px) rotateY(0deg);
+}
+.back{
+	transform: perspective(600px) rotateY(180deg);
+
+}
+.front:hover{
+	transform: perspective(600px) rotateY(360deg);
+}
+.back:hover{
+	transform: perspective(600px) rotateY(360deg);
+
+}
+.star1{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 31rem;
+	left: 2rem;
+	z-index: 4;
+	width: 70px;
+	
+	
+  }
+  .star2{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 30rem;
+	left: 15rem;
+	z-index: 4;
+	width: 76px;
+	
+	
+  }
+  .star3{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 43rem;
+	left:6rem;
+	z-index: 4;
+	width: 70px;
+	
+	
+  }
+  .star4{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom:42rem;
+	left: 18rem;
+	z-index: 4;
+	width: 50px;
+	
+	
+  }
+  .star5{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 31rem;
+	left: 19rem;
+	z-index: 4;
+	width: 60px;
+	
+	
+  }
+  .star6{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 32rem;
+	left: 34rem;
+	z-index: 4;
+	width: 72px;
+	
+	
+  }
+  .star7{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 35rem;
+	left: 59rem;
+	z-index: 4;
+	width: 80px;
+	
+	
+  }
+  .star8{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 37rem;
+	left: 80rem;
+	z-index: 4;
+	width: 80px;
+	
+	
+  }
+  .star9{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 43rem;
+	left: 72rem;
+	z-index: 4;
+	width: 52px;
+	
+	
+  }
+  .star10{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 42rem;
+	left: 52rem;
+	z-index: 4;
+	width: 80px;
+	
+	
+  }
+  .star11{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 40rem;
+	left: 89rem;
+	z-index: 4;
+	width: 80px;
+	
+	
+  }
+  .star12{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 41rem;
+	left: 32rem;
+	z-index: 4;
+	width: 85px;
+	
+	
+  }
+  .star13{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 40rem;
+	left: 62rem;
+	z-index: 4;
+	width: 95px;
+	
+	
+  }
+  .star14{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 40rem;
+	left: 39rem;
+	z-index: 4;
+	width: 66px;
+	
+	
+  }
+  .star15{
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+    bottom: 32rem;
+	left: 39rem;
+	z-index: 4;
+	width: 80px;
+	
+	
+  }
+  .reward{
+	background:linear-gradient(#015d37, #0fa164, rgb(11, 137, 80));
+	width: 100%;
+	height: 450px;
+  }
+  .rewarde img{
+	width: 39rem;
+	
+	height: 450px;
+
+  }
+  
+
+  .treward h1{
+
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	
+	
+  }
+  .treward p{
+	line-height: 2;
+  }
+  
+  .treward{
+	padding-left: 10rem;
+	padding-top: 1rem;
+	
+  }
+  .treward a{
+   display: inline-block;
+   margin-top: 2rem;
+   transition: 0.5s;
+  }
+
+  .treward a:hover{
+	background-color: rgba(255, 255, 255, 0.211);
+  }
+ 
+  .footer li p{
+	line-height: 3;
+  }
+  .footer{
+	margin: 3rem 6rem;
+  }
+  .footer p{
+	color: grey;
+	
+
+  }
+  footer ul li a{
+	margin: 1rem;
+	border-radius: 50%;
+	display: inline-block;
+	
+  }
+  footer li a img{
+	filter: invert(1);
+	width: 20px;
+  }
+  .redes a img{
+	transition: 1s;
+  }
+  .redes a{
+	transition: 1s;
+	
+  }
+  .redes a:hover{
+	background-color: #ffffff;
+	
+  }
+  .redes a:hover img{
+	filter: invert(0);
+  }
+  .face img{
+	width: 10px;
+
+  }
+  .twi{
+	padding: 14px;
+	padding-right: 12px;
+  }
+  
+  .raya{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	left: 3rem;
+	background-color: rgb(187, 185, 185);
+	width: 88%;
+	height: 1px;
+	left: 6rem;
+  }
+ 
+  
